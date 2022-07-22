@@ -247,8 +247,8 @@ function thestart() {
       resetBall();
     }
 
-    //Gameover if score > 4
-    if (user.score > 4 || com.score > 4) {
+    //Gameover if score > 5
+    if (user.score > 5 || com.score > 5) {
       clearInterval(loop);
 
       showGameover();
