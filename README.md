@@ -30,7 +30,7 @@ PLAY
 
 - Responsive
 - Single & Multiplayer
-- Fullscreen mode
+
 
 ## Tech Stack
 
