@@ -1,0 +1,105 @@
+body {
+  background-color: #131519;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+}
+
+.intro,
+#thebtns {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+/* responsive starts*/
+
+@media screen and (max-width: 500px) {
+  .intro,
+  #thebtns {
+    font-size: 10px;
+    left: 15%;
+  }
+  #thebtns {
+    font-size: 20px;
+    left: 10%;
+  }
+}
+
+/* responsive ends */
+
+
+
+
+#mainplaybtn {
+  margin: 20px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  background-color: white;
+  animation: inc 1s linear infinite;
+}
+@keyframes inc {
+  0% {
+    font-size: 10px;
+    background-color: #5077c4;
+  }
+  25% {
+    font-size: 20px;
+    background-color: #3d8f84;
+  }
+  50% {
+    font-size: 30px;
+    background-color: #4aaa42;
+  }
+  75% {
+    font-size: 40px;
+    background-color: #b4b647;
+  }
+  100% {
+    font-size: 10px;
+    background-color: #d84531;
+  }
+}
+
+#mainplaybtn:hover {
+  animation: none;
+  background-color: rgba(255, 0, 0, 0.493);
+}
+
+.ModeBtn {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+#singleMode,
+#MultiMode {
+  width: 150px;
+  height: 75px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  border-radius: 5%;
+  background-color: rgb(190, 42, 42);
+  cursor: pointer;
+}
+
+#singleMode a,
+#MultiMode a {
+  text-decoration: none;
+  color: #131519;
+}
+
+#singleMode:hover,
+#MultiMode:hover {
+  background-color: gray;
+}
